@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+:root{
+    --purple: #814096;
+    --pink: #f83292;
+    --gradient: linear-gradient(90deg, var(--purple), var(--pink));
+}
+*{
+    font-family: 'Poppins', sans-serif ;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+/*    text-transform: capitalize;*/
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background: white;
+    font-family: 'Raleway', sans-serif;
+}
+
+#box{
+    height: 350px;
+    width: 1000px;
+    background: #814096;
+    border-radius: 5px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+header{
+    position:fixed;
+    top: 0; left: 0;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+ header .logo{
+    position:absolute;
+    float: left;
+    width: 150px;
+    height: 150px;
+    margin-top:2vh;
+}
+header .school-name{
+    font-size: 2.5vh;
+    margin-left: 22vh;
+    color: var(--purple);
+
+}
+header .school-name span{
+    color:var(--pink);
+}
+header .school-name span{
+    color:var(--pink);
+}
+header .navbar a{
+    font-size: 1.7rem;
+    margin-left: 2rem;
+    color: var(--purple);
+}
+header .navbar a:hover{
+    color:var(--pink);
+}
+header input{
+    display: none;
+}
+header label{
+    font-size: 3rem;
+    color: var(--purple);
+    cursor: pointer;
+    visibility: hidden;
+}
+header label{
+    font-size: 3rem;
+    color:var(--purple);
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+}
+
+
+
+
+#main{
+    height: 450px;
+    width: 480px;
+    background: #0fbcf9;
+    border-radius: 0px;
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400%, 400%;
+    animation: gradient 15s ease infinite;
+}
+#login-form, #signup-form{
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+}
+#signup-form{
+    top: 45%;
+    left: 75%;
+    visibility: hidden;
+}
+#login-form h1, #signup-form h1{
+    font-family: 'Raleway', sans-serif;
+    font-size: 25px;
+    color: #051937;
+}
+#login-form input, #signup-form input{
+    height: 40px;
+    width: 300px;
+    border: 0;
+    outline: none;
+    border-bottom: 1px solid #051937;
+    margin: 5px;
+    background:none;
+}
+input::placeholder{
+    color: #fff;
+}
+
+#login-form button, #signup-form button{
+    height: 35px;
+    width: 130px;
+    background-color: #051937;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    margin-top: 30px;
+    margin-left: 175px;
+    color: #fff;   
+}
+#loginBtn, #signupBtn{
+    height: 35px;
+    width: 120px;
+    background: transparent;
+    color: #0fbcf9;
+    border: 1px solid #0fbcf9;
+    border-radius: 5px;
+    outline: none;
+    position: absolute;
+    top: 65%;
+    left:75%;
+    transform: translate(-50%,-50%);
+    transition: all 0.5s;
+}
+#signupBtn{
+    left: 25%;
+}
+#loginBtn:hover, #signupBtn:hover{
+    background-color: #013F92;
+    color: #fff;
+    cursor: pointer;
+}
+#loginmsg, #signupmsg{
+    font-family: 'Raleway', sans-serif;
+    font-size: 25px;
+    color: #0fbcf9;
+    position: absolute;
+    top: 35%;
+    left: 75%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+}
+#signupmsg{
+    left: 25%;
+}
+
+#msg-holder {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+  }
+
+  
+  #test{
+    width: 40%;
+    text-align: center;
+    margin: 0;
+    padding: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #8a0000;
+    border: 1px solid #8a0000;
+    background-color: transparent;
+    opacity: 0;
+  }
+  
+  #error-msg-second-line {
+    display: block;
+  }
+  
+
+
+@keyframes gradient {
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+
+    
+}

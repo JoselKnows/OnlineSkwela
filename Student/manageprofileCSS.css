@@ -1,0 +1,764 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+
+:root{
+    
+    --purple: #814096;
+    --pink: #f83292;
+    --blue: #1e90ff; 
+    --black: #000000;
+    --white: #ffffff;
+    --gradient: linear-gradient(90deg, var(--purple), var(--pink));
+    
+    
+
+}
+* {
+    font-family: 'Poppins', sans-serif ; /*TEST DESIGN*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+*:focus {
+    outline: none;
+}
+
+body {
+    width: 100%;
+    overflow-x: hidden;
+    color: #707070;
+    font-family: "open sans";
+     background-color: #E8EDF2;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+ul , li {
+    list-style-type: none;
+}
+
+/* =============Comman-Css================== */
+
+.btn {
+    color: #fff;
+    background: linear-gradient(to top, #B576F6, #C18CF8);
+    padding: 8px 20px;
+    border-radius: 2px;
+    margin: 15px 0;
+    display: inline-block;
+}
+
+.btn-big {
+    padding: 10px 35px;
+}
+
+input {
+    border: none;
+    box-shadow: 0 0 4px #ccc;
+    padding: 10px 15px;
+}
+
+input:focus {
+    outline: none;
+    box-shadow: 0 0 8px #ccc;
+}
+
+
+button:focus {
+    outline: none;
+}
+
+
+
+
+
+/* ===========Side-bar-css-Start============== */
+
+.sidebar-nav {
+    width: 250px;
+    background-color: #000000;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    margin-top: 70px;
+    padding-right: 5px;
+}
+
+.logo {
+    margin-bottom: 50px;
+}
+
+
+.logo h1 {
+    color: var(--pink);
+    padding: 30px;
+}
+ 
+.logo a img {
+    width: 100px;
+    /*padding:  3px;*/
+}
+
+.profile {
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.profile .avtar {
+    margin-right: 15px;
+    
+}
+.profile .avtar a img{
+  width: 400px,
+  height: auto
+}
+
+.profile .name-pos h5 {
+    color: #8C31EB;
+}
+
+.side-nav ul li {
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+    padding:15px 10px;
+    width: 100%;
+    cursor: pointer;
+    height:50px;
+    
+}
+
+.side-nav ul li a{
+    transition: .3s ease;
+}
+
+.side-nav ul li:hover {
+    /*background-color: #B576F6;*/
+    /*color: #6FA0FF;*/
+}
+
+.side-nav ul li:hover a {
+    /*color: #6FA0FF;*/
+    margin-left: 4px;
+}
+
+.side-nav ul li span {
+    margin-right: 20px;
+}
+.img-polaroid {
+  /*padding: 5px;*/
+  background-color: #ECECEC;
+  border: 4px solid #E8F0FF!important;
+}
+
+/* ================header-css-Start================= */
+
+
+
+
+/* ================header-css-Start================= */
+
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 99999999;
+}
+
+header .head-inner .left-part p {
+    font-size: 19px;
+    margin-left: 80px;
+    color: var(--purple);
+
+}
+header .school-name span{
+    color:var(--pink);
+}
+
+.head-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+    height: 70px;
+    z-index: 999;
+    padding-right: 30px;
+}
+
+.logo-img{
+    height: 66px!important;
+    width: 66px!important;
+    position: absolute;
+    top: 6px;
+    left: 276px;
+}
+
+header form {
+    position: relative;
+    width: 300px;
+    height: 40px;
+}
+
+header form input {
+    width: 100%;
+    height: 100%;
+}
+
+header button {
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 20%;
+    text-align: center;
+    padding-top: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    color: #fff;
+    background-color: #B576F6;
+}
+
+.right-part ul {
+    display: flex;
+    align-items: center;
+}
+
+.right-part ul li {
+    margin-left: 40px;
+}
+.right-part ul li h2{
+     color: #508AFF;
+}
+.right-part ul .user {
+    display: flex;
+    align-items: center;
+}
+
+.right-part ul .user h2 {
+    font-weight: 400;
+    margin-left: 15px;
+}
+
+.right-part ul li.notifiaction span,
+.right-part ul li span {
+    font-size: 22px;
+    cursor: pointer;
+    position: relative;
+}
+
+.right-part ul li.notifiaction span::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    width: 7px;
+    height: 7px;
+    border-radius: 20px;
+    background-color: #7EAAFF;
+}
+
+section{
+    height: 100vh;
+    margin-left: 250px;
+    padding: 155px 65px 0px 65px;
+}
+
+/* ===========Main_contant-css-Start================== */
+.main_contant{
+    background-color: #E8EDF2;
+}
+
+.main_contant .dashboard {
+    margin-bottom: 30px;
+
+}
+
+.dropdown{
+    padding: 20px 10px 20px 10px;
+    /*display: flex;*/
+    /*text-align: center;*/
+}
+
+li a{
+    color: #787878;
+    font-size: 16px;
+     font-family: 'Montserrat';
+    /*letter-spacing: .6px;*/
+}
+
+.desig-div{
+    margin-top: -40px;
+}
+
+.desig-1{
+    color: #787878;
+    font-size: 13px;
+    font-family: 'open sans';
+    letter-spacing: .6px;
+}
+
+.desig-2{
+    color: #787878;
+    font-size: 13px;
+    font-family: 'open sans';
+    letter-spacing: .6px;
+}
+
+.header-my-acc{
+    border-bottom: 1px solid #EEEEEE;
+    padding-bottom: 25px;
+    margin-top: -15px;
+    margin-bottom: 35px;
+}
+
+.header1-my-acc{
+    border-bottom: 1px solid #DBDBDB;
+    padding-bottom: 20px;
+    margin-top: 20px;
+}
+
+.header-my-acc span{
+    font-family: 'Montserrat';
+    font-size: 11px;
+    color: #263238;
+}
+
+.header-my-acc .fa-user{
+    font-size: 25px;
+    position: relative;
+    top: 2px;
+    margin-right: 10px;
+    color: #5890FF;
+}
+
+.change-pass-div{
+    font-style: italic;
+    color: #BABABA;
+    text-decoration: underline;
+}
+
+.upload-btn-div{
+    padding-left: 150px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.upload-btn-div .btn-info{
+    border: none;
+    position: absolute;
+    top: -155px;
+    right: 5px;
+    padding: 14px 18px 14px 20px;
+    text-transform: uppercase;
+    font-family: 'Montserrat';
+    font-size: 12px;
+    background: #6599FF;
+    border-radius:25px;
+    cursor: pointer;
+    color:#fff;
+    margin-left: -6px;
+}
+
+.dropdown .dropdown-toggle{
+    color: #555B68;
+}
+
+.main_contant .dashboard ul li {
+    display: flex;
+    align-items: center;
+}
+
+.main_contant .dashboard ul li span {
+    color: #8C31EB;
+    margin-right: 10px;
+    font-size: 30px;
+}
+
+.main_contant .dashboard ul li h3 {
+    font-size: 30px;
+    color: #fff;
+    background-color: #f83292;
+    padding: auto;
+
+}
+
+.main_contant .box img{
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+     background-repeat: no-repeat;
+}
+
+.info_card {
+    display: flex;
+    /*justify-content: space-between;*/
+    margin-bottom: 40px;
+    padding-bottom: 50px;
+
+}
+
+.info-div-center{
+   padding-right: 100px;
+}
+
+.info_card .card {
+    margin-top: -45px;
+    padding: 60px 50px;
+    background: #fff;
+    color: #7E7E7E;
+    height: 520px;
+    border-radius: 10px;
+    position: relative;
+    width: 100%;
+     white-space: nowrap;
+    /*overflow-x: auto;*/
+}
+
+.info_card .card::after {
+    bottom: auto;
+    top: -15%;
+    right: -15%;
+}
+
+.info_card .card:nth-child(2) {
+    background: linear-gradient(to left, #6AA2E3, #6866E9);
+}
+
+.info_card .card:nth-child(3) {
+    background: linear-gradient(to left, #FEB683, #FF8993);
+}
+
+.info_card .card span {
+    color: #787878;
+    font-size: 20px;
+    font-family: 'open sans';
+    letter-spacing: .6px;
+}
+
+.info_card .card .number_detail {
+    margin-bottom: 10px;
+}
+
+.managestudent .addstudent {
+    margin-bottom: 30px;
+    background-color: #ffffff;
+}
+
+.managestudent .addstudent ul li {
+    display: flex;
+    align-items: center;
+}
+
+.managestudent .addstudent ul li span {
+    color: #8C31EB;
+    margin-right: 10px;
+    font-size: 30px;
+}
+
+.managestudent .addstudent ul li h3 {
+    font-size: 30px;
+    color: #fff;
+    background-color: #f83292;
+    padding: 5px;
+}
+
+.managestudent .studentform{
+
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+}
+/* ===============Jquery-hide-show-class=========== */
+
+.sidebar-nav.hide li a,
+.sidebar-nav.hide .name-pos{
+    display: none;
+}
+
+.sidebar-nav.hide {
+    width: 100px;
+}
+
+.sidebar-nav.hide li span {
+    font-size: 22px;
+}
+
+.sidebar-nav .logo a:last-child,
+.sidebar-nav.hide .logo a:first-child {
+    display: none;
+}
+
+.sidebar-nav.hide .logo a:last-child {
+    display: block;
+    font-size: 50px;
+    text-align: center;
+}
+
+.slide-left {
+    margin-left: 100px;
+}
+
+.sidebar-nav.hide{
+    padding-left: 5px;
+}
+
+
+.sidebar-nav.hide .li-sidenav a{
+    display: none;
+}
+
+.sidebar-nav.hide .li-sidenav i{
+    font-size: 20px;
+    transition: .3s ease;
+}
+
+.sidebar-nav.hide .manage-span{
+    display: none;
+}
+
+
+
+
+
+
+
+/*ADDED HEADER*/
+
+.sticky{
+    padding: 0px 52px 0px 48px;
+   
+}
+
+.eskwela-logo-img{
+    width: 150px;
+    height: 70px;
+    margin-top: 5px;
+}
+
+.bars-ul{
+    position: absolute;
+    left: 0;
+    margin-left: 240px;
+}
+
+.bars-ul .menu-bar-li .fa-bars{
+    color: #808891;
+    font-size: 19px;
+}
+
+.dropdown1 .dropdown-toggle1{
+    color: #666666;
+    font-size: 14px;
+    font-family: 'Open sans';
+    text-transform: uppercase;
+    letter-spacing: .6px;
+}
+
+.notifiaction{
+    /*padding-right: 30px;*/
+    position: relative;
+    top: -1px;
+}
+
+.fa-user{
+    margin-right: 10px;
+    font-size: 15px;
+    color: #666666;
+    border-left: 1px solid #CCCCCC;
+    padding-left: 25px;
+}
+
+.fa-envelope{
+    font-size: 16px;
+    color: #666666;
+    /*margin-left: -35px;*/
+}
+
+.fa-bell{
+    font-size: 16px;
+    color: #666666;
+}
+
+.logo-name span{
+    color: #6FA0FF;
+    margin-left: -3px;
+    font-weight: 500;
+    font-size: 20px;
+    font-family: 'Open sans';
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.my-acc-h1{
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+
+.my-acc-h1 .acc-hi{
+    font-family: 'Montserrat';
+    font-size: 20px;
+    color: #263238;
+}
+
+.my-acc-h1 .acc-name{
+    font-family: 'Montserrat';
+    font-size: 20px;
+    color: #528DFF;
+}
+
+.my-acc-h1 .acc-welcome{
+    font-family: 'Montserrat';
+    font-size: 20px;
+    color: #263238;
+}
+
+.featured-text{
+    font-family: 'open sans';
+    font-size: 14px;
+    color: #747b7f;
+    margin-left: 2px;
+}
+
+.dropdown1 .header-name{
+    color: #666666;
+    font-size: 14px;
+    font-family: 'Open sans';
+    text-transform: uppercase;
+    letter-spacing: .6px;
+}
+
+
+.badge-important{
+    color: #528DFF;
+}
+
+
+@media screen and (max-width:992px) {
+    
+    .sidebar-nav {
+        left: -270px;
+        transition: .4s;
+        z-index: 1000;
+    }
+
+    .sidebar-nav.hide {
+        left: 0;
+        width: 95px;
+    }
+
+    .sidebar-nav.hide li a,
+    .sidebar-nav.hide .name-pos,
+    .sidebar-nav.hide .logo h1:first-child {
+        display: block;
+    }
+
+    .sidebar-nav.hide .logo h1:last-child {
+        display: none;
+    }
+
+    .logo {
+        margin-bottom: 30px;
+    }
+
+    header,
+    .main_contant {
+        margin-left: 0;
+    }
+    
+    .slide-left {
+        margin-left: 0;
+    }
+}
+
+
+@media screen and (max-width:767px) {
+   
+    .head-inner .name-pos {
+        display: none;
+    }
+
+    header form {
+        width: 150px;
+    }
+
+    header button {
+        width: 30%;
+    }
+
+    .main table {
+        width: 700px;
+    }
+
+    .main {
+        overflow-x: auto;
+    }
+
+    .info_card {
+        /*flex-wrap: wrap;*/
+    }
+
+    .info_card .card {
+        /*margin-bottom: 20px;*/
+    }
+    .dropdown1 .header-name{
+        display: none;
+    }
+    .logo-name{
+        display: none;
+    }
+    .bars-ul{
+        margin-left: 0px;
+    }
+}
+
+@media screen and (max-width:475px) {
+    
+    .head-inner {
+        flex-direction: column-reverse;
+    }
+
+    .head-inner .left-part ,
+    .head-inner .right-part {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    header form {
+        width: 100%;
+    }
+
+    header button {
+        width: 15%;
+    }
+
+    .right-part ul {
+        justify-content: space-between;
+    }
+
+    .info_card {
+        flex-direction: column;
+    }
+    
+    .info_card .card {
+        width: 100%;
+    }
+
+    .main_contant {
+        margin: 0;
+    }
+    .managestudent{
+        margin: 0;
+    }
+}
